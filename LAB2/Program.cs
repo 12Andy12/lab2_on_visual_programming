@@ -28,5 +28,10 @@ public class Program
         a = (RomanNumber)b.Clone();
         Console.WriteLine("p = " + p);
         Console.WriteLine("a = " + a);
+
+        Console.WriteLine("\nCompare: \nb & b");
+        Console.WriteLine(b.CompareTo(b));
+        Console.WriteLine("\nCompare: \nc & b");
+        Console.WriteLine(c.CompareTo(b));
     }
 }

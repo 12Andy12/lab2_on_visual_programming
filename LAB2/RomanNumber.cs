@@ -13,6 +13,8 @@ namespace LAB2
 
         public RomanNumber(ushort n)
         {
+            if(n < 0)
+                throw new ArgumentOutOfRangeException("Error: неверное входное значение");
             number = n;
         }
         //Сложение римских чисел
@@ -39,6 +41,8 @@ namespace LAB2
             else
                 throw new RomanNumberException("Error: умножение невозможно");
         }
+
+
         //Целочисленное деление римских чисел
         public static RomanNumber Div(RomanNumber? n1, RomanNumber? n2)
         {

@@ -4,6 +4,7 @@ public class Program
 {
     public static void Main()
     {
+        //RomanNumber y = new RomanNumber(0);
         RomanNumber a = new RomanNumber(12);
         RomanNumber b = new RomanNumber(4);
         Console.WriteLine(a.ToString());
@@ -33,6 +34,6 @@ public class Program
         Console.WriteLine(b.CompareTo(b));
         Console.WriteLine("\nCompare: \nc & b");
         Console.WriteLine(c.CompareTo(b));
-        
+
     }
 }

@@ -13,7 +13,7 @@ namespace LAB2
 
         public RomanNumber(ushort n)
         {
-            if(n < 0)
+            if(n <= 0)
                 throw new ArgumentOutOfRangeException("Error: неверное входное значение");
             number = n;
         }
